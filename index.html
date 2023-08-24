@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="scrip.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scrip.js" defer></script>  
 </head>
 <body>
-    
+  <h1>Rock Paper Scissor Game!</h1>
+  <div>The winner is the first one that gets 4 points</div>
+  <div id="scoreboard">
+    <div id="playerPoints">
+      <h2>Player Points</h3>
+      <div class="points">0</div>
+    </div>
+    <div id="botPoints">
+      <h2>Bot Points</h3>
+      <div class="points">0</div>
+    </div>
+  </div>
+  <div id="buttons">
+    <button id="rock" class="selection">
+      <div class="buttonText">✊</div>
+    </button>
+    <button id="paper" class="selection">
+      <div class="buttonText">✋</div>
+    </button>
+    <button id="scissor" class="selection">
+      <div class="buttonText">✌</div>
+    </button>
+  </div>
+  <div id="result">Wellcome to the Rock Paper Scissor game</div>
+  <div id="restartContainer">
+    <button id="restartButton">Restart</button>
+  </div>
 </body>
 </html>
